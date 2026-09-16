@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - MRA Fashion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <section class="auth-container">
+    <div class="auth-box">
+      <h2>Create Account</h2>
+      <form id="signupForm">
+        <input type="text" id="signupName" placeholder="Full Name" required>
+        <input type="email" id="signupEmail" placeholder="Email Address" required>
+        <div class="password-box">
+          <input type="password" id="signupPassword" placeholder="Create Password" required>
+          <i class="fa-solid fa-eye" id="toggleSignupPassword"></i>
+        </div>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit">Signup</button>
+      </form>
+      <a href="index.html" class="back-link">
+      <i class="fa-solid fa-arrow-left"></i> Back to Home
+    </a>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

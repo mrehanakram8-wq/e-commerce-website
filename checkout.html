@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - MRA Fashion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("_BrC7wu4_hA-vmC5C");
+   })();
+</script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-box-style">
+        
+        <div class="text-box-group">
+          <div class="box-initials">MRA APPAREL</div>
+          
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="checkout-wrapper">
+    <div class="checkout-card">
+      <div class="checkout-header">
+        <h1>Complete Your Order</h1>
+        <p>Please enter your shipping details for Cash on Delivery</p>
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <div class="input-group">
+          <label for="custName"><i class="fa-solid fa-user"></i> Full Name</label>
+          <input type="text" id="custName" placeholder="John Doe" required>
+        </div>
+
+        <div class="input-group">
+          <label for="custPhone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+          <input type="tel" id="custPhone" placeholder="0300 1234567" required>
+        </div>
+
+        <div class="input-group">
+          <label for="custAddress"><i class="fa-solid fa-location-dot"></i> Shipping Address</label>
+          <textarea id="custAddress" rows="3" placeholder="House/Flat No, Street, City" required></textarea>
+        </div>
+
+        <div class="payment-method-box">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Payment Method: <strong>Cash on Delivery (COD)</strong></span>
+        </div>
+
+        <button type="submit" class="place-order-btn">
+          Place Order <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

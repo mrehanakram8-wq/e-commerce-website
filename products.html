@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - MRA Fashion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+ <header>
+  <nav class="navbar">
+    <a href="index.html" class="logo-box-style">
+      <!-- <div class="emoji-box"><span>👔</span></div> -->
+      <div class="text-box-group">
+        <div class="box-initials">MRA Apparel</div>
+        <!-- <div class="box-sub">APPAREL</div> -->
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="products.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <!-- <a href="login.html"><button class="login-btn">Login</button></a> -->
+    </div>
+  </nav>
+</header>
+
+  <section class="page-title">
+    <h1>Our Fashion Collection</h1>
+  </section>
+
+  <section class="filter-section">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="casual">Casual</option>
+      <option value="party">Party Wear</option>
+      <option value="formal">Formal</option>
+    </select>
+  </section>
+
+  <section class="products">
+    <div class="product-container" id="productContainer">
+      <div class="product-card" data-category="casual">
+        <img src="images/dress1.jpg" alt="Dress">
+        <h3>Casual Dress</h3>
+        <div class="product-icon">
+          <p>$35</p>
+          <i class="fa-regular fa-heart wishlist-icon"></i>
+        </div>
+        <button class="add-cart">Add To Cart</button>
+      </div>
+
+      <div class="product-card" data-category="party">
+        <img src="images/dress2.jpg" alt="Dress">
+        <h3>Party Dress</h3>
+        <div class="product-icon">
+          <p>$55</p>
+          <i class="fa-regular fa-heart wishlist-icon"></i>
+        </div>
+        <button class="add-cart">Add To Cart</button>
+      </div>
+
+      <div class="product-card" data-category="formal">
+        <img src="images/dress3.jpg" alt="Dress">
+        <h3>Formal Outfit</h3>
+        <div class="product-icon">
+          <p>$70</p>
+          <i class="fa-regular fa-heart wishlist-icon"></i>
+        </div>
+        <button class="add-cart">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
